@@ -1,4 +1,5 @@
 // Evan White
+import java.util.Arrays;
 import java.io.*;
 import java.io.File;
 import java.util.ArrayList;
@@ -9,38 +10,38 @@ public class ArrayArrayListReveiw {
 		
 		int temp = 0;
 		int num = 0;
-		int num1 = 0;
+		int counter = 0;
+		
 		
 		Scanner input = new Scanner(new File("input.txt"));
 		
 		ArrayList <Integer> list1 = new ArrayList <Integer>();
+		Integer []list2 = new Integer[15];
 		
 		while(input.hasNext())
 		{
-		 temp = Integer.parseInt(input.nextLine());
+		       temp = Integer.parseInt(input.nextLine());
+		       list2[counter] = temp;
+		       list1.add(temp);
+
+			   counter++;
+			}
 		
-		 list1.add(temp);
-		 
-		}
 		
-		Integer []list2 = new Integer[list1.size()];
-		System.out.println(list2);
-		
-		while(input.hasNext())
+		for(int i = 0; i < list2.length; i++)
 		{
-		   num = input.nextInt();
-		   list2[num1] = num;
+			
+			
+			
+			
+			
 		}
+		System.out.println(Arrays.toString(list2));
 		
-		System.out.println("Yo " + list2);
+	
 		
-		
-		
-		
-		
-		
-		
-		
+		list2[3] = 9;
+		list2[5] = 12;
 		
 		
 		
@@ -85,12 +86,7 @@ public class ArrayArrayListReveiw {
 		
 		list1.set(5, 12);
 		System.out.println("With 12 " + list1);
-		
-		
-		
-		
-		
-		
+
 		
 	}
 
